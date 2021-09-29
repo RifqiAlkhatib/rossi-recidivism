@@ -1,0 +1,7 @@
+rossi\-recidivism module
+========================
+
+.. automodule:: rossi-recidivism
+   :members:
+   :undoc-members:
+   :show-inheritance:
