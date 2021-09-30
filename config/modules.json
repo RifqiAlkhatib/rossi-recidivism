@@ -2,9 +2,27 @@
     {
         "moduleName" : "module1",
         "path"       : "modules/module1/module1.py",
-        "execute"    : true,
+        "execute"    : false,
         "description": "a simple example module",
         "owner"      : ""
+    }, {
+        "moduleName" : "pgIOtest",
+        "path"       : "modules/pgIOtest/pgIOtest.py",
+        "execute"    : false,
+        "description": "pgIO test",
+        "owner"      : ""
+    }, {
+        "moduleName" : "clean-data",
+        "path"       : "modules/clean-data/clean-data.py",
+        "execute"    : true,
+        "description": "Removes unnecessary columns from data and saves cleaned csv file",
+        "owner"      : "Rifqi Alkhatib"
+    },  {
+        "moduleName" : "modelling",
+        "path"       : "modules/modelling/modelling.py",
+        "execute"    : true,
+        "description": "Fits cleaned data to logistic regression model",
+        "owner"      : "Rifqi Alkhatib"
     }, {
         "moduleName": "bayTune",
         "path": "modules/bayTune/bayTune.py",

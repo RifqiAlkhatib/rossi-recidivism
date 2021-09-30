@@ -1,0 +1,18 @@
+{
+    "inputs": {
+        "raw_data": "../data/raw_data/dataset_rossi.csv",
+        "clean_data": "../data/intermediate/rossi_clean.csv"
+    },
+    "outputs": {
+        "logreg_model": "../data/intermediate/logreg_model.pkl"
+    },
+    "params": {
+        "drop_cols": ["Unnamed: 0", "week"],
+        "target": "arrest",
+        "logreg_params": {
+            "Cs": 20,
+            "n_jobs": -1,
+            "max_iter": 1000
+        }
+    }
+}
