@@ -1,0 +1,25 @@
+{
+    "inputs": {
+        "raw_data": "../data/raw_data/dataset_rossi.csv",
+        "clean_data": "../data/intermediate/rossi_clean.csv"
+    },
+    "outputs": {
+        "logreg_model": "../data/intermediate/logreg_model.pkl",
+        "logreg_metrics": "../results/logreg_metrics.csv",
+        "logreg_coefs": "../results/logreg_coefs.csv"
+    },
+    "params": {
+        "drop_cols": ["Unnamed: 0", "week"],
+        "target": "arrest",
+        "tts_params": {
+            "test_size": 0.25,
+            "random_state": 42
+        },
+        "logreg_params": {
+            "Cs": 20,
+            "n_jobs": -1,
+            "max_iter": 1000
+        },
+        "metrics_cols": ["Metric", "Score"]
+    }
+}
