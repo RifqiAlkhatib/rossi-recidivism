@@ -18,7 +18,7 @@ def drop_cols(logger, data=raw_data):
         logger : {logging.Logger}
             The logger used for logging error information
         data: {path to csv}
-            csv file containing convict data
+            location containing csv file containing convict data
     '''
 
     df = pd.read_csv(data)
@@ -37,7 +37,7 @@ def save_data(logger, df, data=clean_data):
         df: {dataframe}
             dataframe containing cleaned data
         data: {path to csv}
-            csv file containing cleaned data
+            location containing csv file containing cleaned data
     '''
 
     df.to_csv(data, index=False)
